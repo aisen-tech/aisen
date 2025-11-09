@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>기술 | Safety AI</title>
+  <title>기술 | AISEN</title>
   <!-- 공통 head: head.html에 정의된 내용을 그대로 복사하여 사용합니다. -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +22,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Safety&nbsp;AI</a>
+      <a class="navbar-brand" href="index.html">AISEN</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -31,6 +31,7 @@
           <li class="nav-item"><a class="nav-link" href="index.html">홈</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">회사소개</a></li>
           <li class="nav-item"><a class="nav-link" href="services.html">서비스</a></li>
+          <li class="nav-item"><a class="nav-link" href="service-packages.html">상품 안내</a></li>
           <li class="nav-item"><a class="nav-link active" href="technology.html">기술</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">문의하기</a></li>
         </ul>
@@ -57,47 +58,74 @@
       <div class="row g-4">
         <div class="col-md-4">
           <h4 class="fw-bold"><i class="fa-solid fa-display me-2 text-primary"></i>프론트엔드</h4>
-          <p>Next.js와 React 기반의 웹 인터페이스를 통해 사용자는 손쉽게 영상 업로드, 분석 결과 확인, 대시보드 조회 등을 수행할 수 있습니다【956277429798154†L193-L203】.</p>
+          <p>Next.js와 React 기반의 웹 인터페이스를 통해 사용자는 손쉽게 영상 업로드, 분석 결과 확인, 대시보드 조회 등을 수행할 수 있습니다.</p>
         </div>
         <div class="col-md-4">
           <h4 class="fw-bold"><i class="fa-solid fa-robot me-2 text-primary"></i>AI 분석 엔진</h4>
-          <p>YOLOv8, OpenPose, 얼굴 인식 모델을 통합하여 안전 장비 착용 여부, 작업 자세, 무단 침입 등을 감지하며 GPU와 서버리스 환경에서 효율적으로 동작합니다【956277429798154†L210-L219】.</p>
+          <p>YOLOv8, OpenPose, 얼굴 인식 모델을 통합하여 안전 장비 착용 여부, 작업 자세, 무단 침입 등을 감지하며 GPU와 서버리스 환경에서 효율적으로 동작합니다.</p>
         </div>
         <div class="col-md-4">
           <h4 class="fw-bold"><i class="fa-solid fa-cloud me-2 text-primary"></i>데이터 & 인프라</h4>
-          <p>원본 영상과 분석 결과는 암호화된 상태로 S3에 저장되고, 감지 이벤트와 메타데이터는 DynamoDB에 기록되며 AWS Lambda와 Fargate를 통해 확장성 있는 처리를 지원합니다【956277429798154†L221-L225】.</p>
+          <p>원본 영상과 분석 결과는 암호화된 상태로 S3에 저장되고, 감지 이벤트와 메타데이터는 DynamoDB에 기록되며 AWS Lambda와 Fargate를 통해 확장성 있는 처리를 지원합니다.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Demo Section: Embed Worksite Safety Analytics -->
-  <section class="py-5 bg-light">
+  <!-- 기술 상세 설명 -->
+  <section class="py-5">
     <div class="container">
-      <div class="row mb-4 text-center">
-        <h2 class="fw-bold">기술 데모</h2>
-        <p>다음 페이지에서 AI 기반 영상 분석 데모를 직접 체험해보세요.</p>
+      <div class="row mb-4">
+        <div class="col">
+          <h2 class="fw-bold">사용 기술</h2>
+          <p>AI 기반 영상 분석 플랫폼은 여러 계층의 기술로 구성되어 있으며, 최신 웹 개발과 클라우드 인프라를 활용해 높은 확장성과 안정성을 제공합니다.</p>
+        </div>
       </div>
-      <div class="row justify-content-center">
-        <div class="col-lg-10">
-          <div class="ratio ratio-16x9 border rounded">
-            <!-- 외부 사이트를 iframe으로 임베드하여 데모를 제공합니다. 사용자의 네트워크 환경에 따라 로딩 속도가 달라질 수 있습니다. -->
-            <iframe src="https://www.worksitesafetyanalytics.com" title="Worksite Safety Analytics Demo" allowfullscreen></iframe>
-          </div>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <h4 class="fw-bold"><i class="fa-solid fa-code me-2 text-primary"></i>프론트엔드</h4>
+          <ul class="list-unstyled">
+            <li>Next.js 15과 React 19 기반의 SPA/SSR 구조</li>
+            <li>TypeScript 및 Tailwind CSS와 shadcn/ui 컴포넌트로 일관된 UI 제공</li>
+            <li>CloudFront를 통해 전 세계 어디서나 빠른 로딩 속도 보장</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h4 class="fw-bold"><i class="fa-solid fa-server me-2 text-primary"></i>백엔드 & 인프라</h4>
+          <ul class="list-unstyled">
+            <li>AWS API Gateway와 Lambda로 구성된 서버리스 API 계층</li>
+            <li>영상 길이에 따라 Lambda, ECS Fargate, GPU 인스턴스를 조합한 유연한 처리</li>
+            <li>SQS 큐로 작업을 분산 관리하고 자동 재시도를 지원</li>
+            <li>DynamoDB와 S3에 메타데이터와 영상 데이터를 암호화하여 저장</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h4 class="fw-bold"><i class="fa-solid fa-brain me-2 text-primary"></i>AI/ML</h4>
+          <ul class="list-unstyled">
+            <li>YOLOv8로 안전장비 착용 여부와 작업자·중장비를 감지</li>
+            <li>OpenPose를 통해 작업자의 자세를 분석하고 위험 동작을 분류</li>
+            <li>FaceNet/dlib 기반 얼굴 인식으로 무단 침입자 식별</li>
+            <li>OpenCV와 SageMaker를 활용해 영상 전처리와 모델 호스팅을 최적화</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h4 class="fw-bold"><i class="fa-solid fa-shield-check me-2 text-primary"></i>보안 & 운영</h4>
+          <ul class="list-unstyled">
+            <li>저장·전송 구간 모두 암호화하여 데이터 보호</li>
+            <li>정기 백업과 버전 관리로 데이터 손실 위험 최소화</li>
+            <li>AWS CDK와 Docker로 인프라를 코드로 관리하여 지속적인 배포 자동화</li>
+            <li>CloudWatch와 SNS를 통해 서비스 상태를 모니터링하고 알림을 제공합니다</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
+
 
   <!-- Footer -->
   <footer class="py-4 bg-dark text-light">
     <div class="container text-center">
-      <p class="mb-1">&copy; 2025 Safety AI Co. All Rights Reserved.</p>
-      <div>
-        <a href="#" class="text-light me-3"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="#" class="text-light me-3"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#" class="text-light"><i class="fa-brands fa-linkedin-in"></i></a>
-      </div>
+      <p class="mb-0">&copy; 2025 AISEN Co. All Rights Reserved.</p>
     </div>
   </footer>
 

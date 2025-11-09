@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>문의하기 | AISEN</title>
+  <title>상품 안내 | AISEN</title>
   <!-- 공통 head: head.html에 정의된 내용을 그대로 복사하여 사용합니다. -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,9 +31,9 @@
           <li class="nav-item"><a class="nav-link" href="index.html">홈</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">회사소개</a></li>
           <li class="nav-item"><a class="nav-link" href="services.html">서비스</a></li>
-          <li class="nav-item"><a class="nav-link" href="service-packages.html">상품 안내</a></li>
+          <li class="nav-item"><a class="nav-link active" href="service-packages.html">상품 안내</a></li>
           <li class="nav-item"><a class="nav-link" href="technology.html">기술</a></li>
-          <li class="nav-item"><a class="nav-link active" href="contact.html">문의하기</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">문의하기</a></li>
         </ul>
       </div>
     </div>
@@ -42,41 +42,58 @@
   <!-- Page Hero -->
   <header class="page-hero d-flex align-items-center">
     <div class="container text-center text-white">
-      <h1 class="display-5 fw-bold">문의하기</h1>
+      <h1 class="display-5 fw-bold">서비스 상품 안내</h1>
     </div>
   </header>
 
-  <!-- Contact Form -->
+  <!-- Packages Content -->
   <section class="py-5">
     <div class="container">
       <div class="row mb-4 text-center">
-        <h2 class="fw-bold">문의 사항을 남겨주세요</h2>
-        <p>아래 양식을 작성해주시면 빠르게 답변드리겠습니다.</p>
+        <h2 class="fw-bold">구독 플랜</h2>
+        <p>여러 산업 현장의 규모와 요구 사항에 맞춰 다양한 플랜을 제공합니다. 아래 표는 주요 상품의 개요를 정리한 것으로, 구체적인 견적은 문의를 통해 협의합니다.</p>
       </div>
       <div class="row justify-content-center">
-        <div class="col-lg-6">
-          <!-- 문의가 메일로 전송되도록 설정합니다 -->
-          <form action="mailto:aisen250901@gmail.com" method="post" enctype="text/plain">
-            <div class="mb-3">
-              <label for="contactName" class="form-label">이름</label>
-              <input type="text" class="form-control" id="contactName" placeholder="이름을 입력하세요">
-            </div>
-            <div class="mb-3">
-              <label for="contactEmail" class="form-label">이메일</label>
-              <input type="email" class="form-control" id="contactEmail" placeholder="example@example.com">
-            </div>
-            <div class="mb-3">
-              <label for="contactSubject" class="form-label">제목</label>
-              <input type="text" class="form-control" id="contactSubject" placeholder="제목을 입력하세요">
-            </div>
-            <div class="mb-3">
-              <label for="contactMessage" class="form-label">내용</label>
-              <textarea class="form-control" id="contactMessage" rows="5" placeholder="문의 내용을 입력하세요"></textarea>
-            </div>
-            <div class="text-center">
-              <button type="submit" class="btn btn-primary">보내기</button>
-            </div>
-          </form>
+        <div class="col-lg-10">
+          <div class="table-responsive">
+            <table class="table table-bordered align-middle">
+              <thead class="table-light">
+                <tr>
+                  <th scope="col">구분</th>
+                  <th scope="col">대상 고객</th>
+                  <th scope="col">주요 특징</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>표준형 SaaS</strong></td>
+                  <td>중소 제조·건설·물류 현장</td>
+                  <td>핵심 영상 분석 기능, 기본 알림 및 리포트 제공, 빠른 도입과 사용 편의</td>
+                </tr>
+                <tr>
+                  <td><strong>확장형 SaaS</strong></td>
+                  <td>중대형 사업장</td>
+                  <td>고급 리포트와 분석 기능, 사용자 수 확장, 추가 모듈 지원</td>
+                </tr>
+                <tr>
+                  <td><strong>커스터마이징형</strong></td>
+                  <td>대기업·공공기관</td>
+                  <td>온프레미스 구축, ERP 및 내부 시스템 연동, 맞춤형 개발 및 지원</td>
+                </tr>
+                <tr>
+                  <td><strong>유지보수/데이터 구독</strong></td>
+                  <td>구축형 고객</td>
+                  <td>AI 모델 재학습과 성능 유지관리, 데이터 분석 및 추가 인사이트 제공</td>
+                </tr>
+                <tr>
+                  <td><strong>협회/재단 프로그램</strong></td>
+                  <td>협회·재단·회원사</td>
+                  <td>단체 보급형 프로그램, 대량 도입 시 수익 배분 모델, 공동 프로젝트 추진</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="mt-4"><strong>가격 정보</strong>는 현장 규모와 요구 사항에 따라 달라질 수 있습니다. 자세한 견적을 원하시면 <a href="contact.html">문의하기</a> 페이지를 통해 연락주세요.</p>
         </div>
       </div>
     </div>
