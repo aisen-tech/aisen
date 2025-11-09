@@ -56,7 +56,26 @@
       <div class="row justify-content-center">
         <div class="col-lg-6">
           <!-- 문의가 메일로 전송되도록 설정합니다 -->
-          <form action="mailto:aisen250901@gmail.com" method="post" enctype="text/plain">
+<form action="https://formspree.io/f/xanawpzd" method="POST">
+  <div class="mb-3">
+    <label for="name" class="form-label">이름</label>
+    <input type="text" class="form-control" id="name" name="name" required>
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">이메일</label>
+    <input type="email" class="form-control" id="email" name="email" required>
+  </div>
+  <div class="mb-3">
+    <label for="message" class="form-label">문의 내용</label>
+    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+  </div>
+  <!-- 스팸 방지용 숨김 필드(옵션) -->
+  <input type="text" name="_gotcha" style="display:none">
+  <!-- 전송 후 이동할 주소(옵션) -->
+  <!-- <input type="hidden" name="_next" value="https://aisen.co.kr/thanks.html"> -->
+  <button type="submit" class="btn btn-primary">보내기</button>
+</form>
+
             <div class="mb-3">
               <label for="contactName" class="form-label">이름</label>
               <input type="text" class="form-control" id="contactName" placeholder="이름을 입력하세요">
